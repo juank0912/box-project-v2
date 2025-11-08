@@ -1,11 +1,18 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
+import localFont from 'next/font/local';
+
 // import { Toaster } from 'react-hot-toast';
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
+const momo = localFont({
+  src: 'fonts/Momo_Trust_Display/MomoTrustDisplay-Regular.ttf',
+  weight: '400',
+  style: 'normal',
+});
+const BebasNeue = localFont({
+  src: 'fonts/Bebas_Neue/BebasNeue-Regular.ttf',
+  weight: '400',
+  style: 'normal',
 });
 
 export const metadata: Metadata = {
@@ -19,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className={`${inter.variable} font-sans antialiased`}>
+    <html lang='en' className={`${BebasNeue.className}`}>
+      <body className={`pt-20 antialiased`}>
         {/* <Toaster position='top-right' /> */}
         {children}
       </body>
