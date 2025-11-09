@@ -4,11 +4,11 @@ import localFont from 'next/font/local';
 
 // import { Toaster } from 'react-hot-toast';
 
-const momo = localFont({
-  src: 'fonts/Momo_Trust_Display/MomoTrustDisplay-Regular.ttf',
-  weight: '400',
-  style: 'normal',
-});
+// const momo = localFont({
+//   src: 'fonts/Momo_Trust_Display/MomoTrustDisplay-Regular.ttf',
+//   weight: '400',
+//   style: 'normal',
+// });
 const BebasNeue = localFont({
   src: 'fonts/Bebas_Neue/BebasNeue-Regular.ttf',
   weight: '400',

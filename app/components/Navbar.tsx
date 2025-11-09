@@ -14,8 +14,8 @@ import Link from 'next/link';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Team', href: '/team', current: false },
   { name: 'Precios', href: '/pricing', current: false },
+  { name: 'Team', href: '/team', current: false },
   { name: 'Contactanos', href: '/contactanos', current: false },
 ];
 
@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as='nav'
-      className='fixed top-0 right-0 left-0 z-50 bg-white/95 p-2 backdrop-blur-sm transition-colors duration-200 dark:bg-gray-900/95'
+      className='fixed top-0 right-0 left-0 z-50 bg-white/95 p-2 backdrop-blur-sm transition-colors duration-200 dark:bg-[#002e5e]'
     >
       <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
         <div className='relative flex h-16 items-center justify-between'>
@@ -46,7 +46,7 @@ export default function Navbar() {
             <div className='flex shrink-0 items-center'>
               <Link
                 href={navigation[0].href}
-                className='rounded-md px-3 py-2 text-4xl text-gray-950 decoration-solid transition duration-400 ease-in-out hover:scale-110 hover:text-[#212cff] dark:text-white'
+                className='rounded-md px-3 py-2 text-4xl text-[#002e5e] decoration-solid transition duration-400 ease-in-out hover:scale-110 hover:underline dark:text-stone-300 dark:hover:text-white'
               >
                 Kamus Barbell Club
               </Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
 
               {/* <img alt='Your Company' src={logo} className='h-8 w-auto' /> */}
             </div>
-            {/* iconos del menu */}
+            {/* botones del menu */}
             <div className='hidden self-center sm:ml-6 sm:block'>
               <div className='flex space-x-4'>
                 {navigation.map((item) => (
@@ -63,7 +63,7 @@ export default function Navbar() {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={
-                      'rounded-md px-3 py-2 text-3xl text-gray-950 transition duration-300 ease-in-out hover:scale-120 hover:text-[#212cff] dark:text-white'
+                      'rounded-md px-3 py-2 text-3xl text-[#002e5e] transition duration-300 ease-in-out hover:scale-120 hover:underline dark:text-stone-300 dark:hover:text-white'
                     }
                   >
                     {item.name}
@@ -145,7 +145,7 @@ export default function Navbar() {
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
                 item.current ? 'font-bold' : 'hover:bg-white/5',
-                'block rounded-md px-3 py-2 text-2xl text-gray-950 dark:text-white'
+                'block rounded-md px-3 py-2 text-2xl text-[#002e5e] dark:text-white'
               )}
             >
               {item.name}
