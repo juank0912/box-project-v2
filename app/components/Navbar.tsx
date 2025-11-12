@@ -1,25 +1,15 @@
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-} from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-// import logo from '../../public/KamusNL.png';
-// import Image from 'next/image';
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Precios', href: '/pricing', current: false },
-  { name: 'Team', href: '/team', current: false },
-  { name: 'Contactanos', href: '/contactanos', current: false },
+  { name: 'Home', href: '#hero', current: true },
+  { name: 'Precios', href: '#pricing', current: false },
+  { name: 'Contactanos', href: '#contactanos', current: false },
+  // { name: 'Team', href: '/team', current: false },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 

@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className={`${BebasNeue.className}`}>
+    <html lang='en' className={`${BebasNeue.className} scroll-smooth`}>
       <body className={`pt-20 antialiased`}>
         {/* <Toaster position='top-right' /> */}
         {children}
