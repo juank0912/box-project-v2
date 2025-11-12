@@ -37,6 +37,7 @@ export default function Hero() {
         <Separator />
         <Link
           href='https://wa.me/34699745586'
+          target='_blank'
           className='m-1.5rounded-md m-1.5 inline-block rounded-md bg-sky-950 p-3 text-white transition duration-400 ease-in-out hover:scale-110 hover:shadow-2xl hover:shadow-black dark:bg-stone-300 dark:text-[#002e5e] dark:hover:bg-stone-400'
         >
           Prueba una clase gratis

@@ -138,6 +138,7 @@ export default function Prices() {
             <Link
               href='https://wa.me/34699745586'
               aria-describedby={tier.id}
+              target='_blank'
               className={classNames(
                 tier.featured
                   ? 'text-white hover:text-[#f94b4b] hover:inset-ring-white focus-visible:outline-white dark:text-white'
