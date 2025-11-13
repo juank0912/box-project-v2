@@ -10,7 +10,7 @@ export default function HomePage() {
         <Navbar />
       </header>
       <main>
-        <section id='hero' className='scroll-mt-20'>
+        <section id='hero' className='scroll-mt-20 dark:bg-[#002e5e]'>
           <Hero />
         </section>
         <section>

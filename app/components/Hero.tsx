@@ -11,19 +11,19 @@ export default function Hero() {
   return (
     <div
       // id='hero'
-      className='dark grid grid-cols-1 grid-rows-1 items-center gap-12 p-5 dark:bg-[#002e5e]'
+      className='grid grid-cols-1 grid-rows-1 items-center gap-12 p-5'
     >
       <div className='flex w-auto flex-col items-center'>
         <Image
           src={logo3}
           alt='Kamus Barbell Club Logo'
-          className='inline-block w-2xs md:w-auto dark:hidden'
+          className='scale-up-center inline-block w-2xs md:w-auto dark:hidden'
           loading='eager'
         />
         <Image
           src={logo3_dark}
           alt='Kamus Barbell Club Logo'
-          className='hidden w-2xs md:w-auto dark:inline-block'
+          className='scale-up-center hidden w-2xs md:w-auto dark:inline-block'
           loading='eager'
         />
       </div>
